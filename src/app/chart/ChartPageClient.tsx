@@ -50,9 +50,6 @@ export default function ChartPageClient() {
               Reading the sky…
             </div>
           )}
-          <div className="mt-3 text-center text-[10px] text-[#7E6A73]">
-            Tap a house to understand what you&rsquo;re seeing.
-          </div>
         </div>
       </section>
 

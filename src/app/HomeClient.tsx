@@ -83,8 +83,8 @@ export default function HomeClient() {
         <div
           className="absolute inset-y-0 right-0 z-0 w-full lg:w-[64%]"
           style={{
-            maskImage: "linear-gradient(to right, transparent, black 22%)",
-            WebkitMaskImage: "linear-gradient(to right, transparent, black 22%)",
+            maskImage: "linear-gradient(to right, transparent, black 32%)",
+            WebkitMaskImage: "linear-gradient(to right, transparent, black 32%)",
           }}
         >
           <HeroScene dense={!isMobile && !reduceMotion} />

@@ -90,6 +90,19 @@ export default function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
 
   return (
     <nav className="flex h-full flex-col gap-1 overflow-y-auto px-3 py-5">
+      <Link
+        href="/"
+        onClick={onNavigate}
+        className="mb-4 flex items-center gap-3 px-3"
+      >
+        <span className="grid h-8 w-8 place-items-center rounded-full border border-vyoma-gold">
+          <span className="h-[5px] w-[5px] rounded-full bg-vyoma-gold" />
+        </span>
+        <span className="font-serif text-[17px] tracking-[0.28em] text-vyoma-ink">
+          VYOMA
+        </span>
+      </Link>
+
       {NAV.map((s) => (
         <Section key={s.label} section={s} pathname={pathname} onNavigate={onNavigate} />
       ))}

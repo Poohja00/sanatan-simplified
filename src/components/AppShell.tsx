@@ -1,7 +1,6 @@
 "use client";
 
 import { ReactNode, useState } from "react";
-import { usePathname } from "next/navigation";
 import { ChartProvider, useChart } from "@/lib/ChartContext";
 import SmoothScroll from "@/lib/SmoothScroll";
 import Nav from "@/components/Nav";
@@ -25,22 +24,7 @@ function GlobalCreateChartModal() {
 }
 
 function Shell({ children }: { children: ReactNode }) {
-  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
-
-  // The marketing homepage keeps its full-bleed cinematic layout; every
-  // in-product page gets the sidebar.
-  const isMarketing = pathname === "/";
-
-  if (isMarketing) {
-    return (
-      <>
-        <Nav />
-        <main>{children}</main>
-        <Footer />
-      </>
-    );
-  }
 
   return (
     <div className="min-h-screen lg:grid lg:grid-cols-[240px_1fr]">
