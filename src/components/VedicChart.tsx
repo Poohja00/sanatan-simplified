@@ -219,12 +219,14 @@ export default function VedicChart({
                     stroke={stroke}
                     strokeWidth="1"
                   />
+                  {/* Lagna marker: the traditional stroke cuts across the
+                      cell's corner, rather than running into the cell. */}
                   {isAsc && (
                     <line
-                      x1={x}
+                      x1={x + 30}
                       y1={y}
-                      x2={x + 28}
-                      y2={y + 28}
+                      x2={x}
+                      y2={y + 30}
                       stroke="#c6a66b"
                       strokeWidth="1.5"
                     />
@@ -268,6 +270,55 @@ export default function VedicChart({
                 </g>
               );
             })}
+
+            {/* The centre block is part of the form, not a gap — traditionally
+                it carries the chart's identification. */}
+            <rect
+              x={cell}
+              y={cell}
+              width={cell * 2}
+              height={cell * 2}
+              fill="none"
+              stroke={stroke}
+              strokeWidth="1"
+            />
+            <text
+              x="200"
+              y="185"
+              textAnchor="middle"
+              className="fill-vyoma-gold"
+              style={{ fontSize: 15, letterSpacing: 2 }}
+            >
+              RASI
+            </text>
+            <text
+              x="200"
+              y="207"
+              textAnchor="middle"
+              className="fill-vyoma-muted"
+              style={{ fontSize: 11 }}
+            >
+              D1 · Lagna {chart.ascendant.sign}
+            </text>
+            <text
+              x="200"
+              y="226"
+              textAnchor="middle"
+              className="fill-vyoma-faint"
+              style={{ fontSize: 9 }}
+            >
+              {chart.birth_info.place}
+            </text>
+
+            <rect
+              x="0"
+              y="0"
+              width="400"
+              height="400"
+              fill="none"
+              stroke={stroke}
+              strokeWidth="1.5"
+            />
           </>
         )}
       </motion.svg>
