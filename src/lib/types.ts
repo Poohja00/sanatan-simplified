@@ -76,6 +76,24 @@ export type MatchResult = {
   bride_moon: { sign: string; sign_index: number; degree_in_sign: number; nakshatra: string };
 };
 
+export type SkyPlanet = {
+  sign: string;
+  degree_in_sign: number;
+  nakshatra: string;
+  nakshatra_pada: number;
+  retrograde: boolean;
+};
+
+export type TodaySky = {
+  date: string;
+  place: string;
+  planets: Record<PlanetName, SkyPlanet>;
+  moon_phase: { name: string; illumination: number };
+  retrogrades: string[];
+};
+
+export type TodayData = { sky: TodaySky; panchang: PanchangData };
+
 export type PanchangData = {
   date: string;
   place: string;

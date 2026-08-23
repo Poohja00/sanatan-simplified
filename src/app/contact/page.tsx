@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  robots: { index: false, follow: true },
+};
+
 export default function ContactPage() {
   return (
     <section className="mx-auto max-w-[700px] px-[6vw] py-24">

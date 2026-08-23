@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service",
+  robots: { index: false, follow: true },
+};
+
 export default function TermsPage() {
   return (
     <section className="mx-auto max-w-[700px] px-[6vw] py-24">

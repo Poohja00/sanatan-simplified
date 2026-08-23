@@ -1,4 +1,4 @@
-import { ChartApiError, ChartData, Highlight, HouseExplanation, PlanetExplanation, AskResponse, PanchangData, MatchResult } from "./types";
+import { ChartApiError, ChartData, Highlight, HouseExplanation, PlanetExplanation, AskResponse, PanchangData, MatchResult, TodayData } from "./types";
 
 const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
 
@@ -43,6 +43,10 @@ export function askChart(chart: ChartData, question: string) {
 
 export function fetchPanchang(date: string, place: string) {
   return post<PanchangData>("/api/panchang", { date, place });
+}
+
+export function fetchToday(date: string, place: string) {
+  return post<TodayData>("/api/today", { date, place });
 }
 
 export type PersonInput = { dob: string; tob: string; place: string };
