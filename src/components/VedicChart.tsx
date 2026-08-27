@@ -227,7 +227,7 @@ export default function VedicChart({
                       y1={y}
                       x2={x}
                       y2={y + 30}
-                      stroke="#c6a66b"
+                      stroke="#cc551e"
                       strokeWidth="1.5"
                     />
                   )}

@@ -47,7 +47,7 @@ function MoonGlyph({ illumination }: { illumination: number }) {
         y={32 - r}
         width={(illumination / 100) * r * 2 - r > 0 ? (illumination / 100) * r * 2 - r : 0}
         height={r * 2}
-        fill="#c6a66b"
+        fill="#cc551e"
         clipPath="url(#moon-clip)"
         opacity="0.85"
       />
@@ -56,11 +56,11 @@ function MoonGlyph({ illumination }: { illumination: number }) {
         cy="32"
         rx={Math.abs(r - (illumination / 100) * r * 2)}
         ry={r}
-        fill={illumination < 50 ? "#171210" : "#c6a66b"}
+        fill={illumination < 50 ? "#171210" : "#cc551e"}
         clipPath="url(#moon-clip)"
         opacity={illumination < 50 ? 1 : 0.85}
       />
-      <circle cx="32" cy="32" r={r} fill="none" stroke="#c6a66b" strokeWidth="0.75" opacity="0.5" />
+      <circle cx="32" cy="32" r={r} fill="none" stroke="#cc551e" strokeWidth="0.75" opacity="0.5" />
     </svg>
   );
 }
@@ -233,7 +233,7 @@ export default function TodayClient() {
             <div className="mt-3 flex flex-wrap gap-2">
               {[
                 { href: "/chart", label: "See my chart" },
-                { href: "/ask", label: "Ask VYOMA" },
+                { href: "/ask", label: "Ask Sanatan" },
                 { href: "/match", label: "Check compatibility" },
                 { href: "/explore", label: "Learn the basics" },
               ].map((a) => (

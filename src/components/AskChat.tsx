@@ -53,7 +53,7 @@ export default function AskChat({ chart }: { chart: ChartData }) {
             Start with a question.
           </h2>
           <p className="leading-[1.65] text-vyoma-muted">
-            Ask naturally. VYOMA keeps relevant chart factors in view and
+            Ask naturally. Sanatan Simplified keeps relevant chart factors in view and
             explains the traditional reasoning behind an answer.
           </p>
         </div>

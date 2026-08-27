@@ -103,7 +103,7 @@ export default function CreateChartForm({
         {pending ? "Reading the sky…" : "Create my chart →"}
       </button>
       <div className="mt-5 border-l-2 border-vyoma-gold pl-3 leading-[1.5] text-vyoma-muted">
-        <b className="text-vyoma-ink">VYOMA</b>
+        <b className="text-vyoma-ink">Sanatan Simplified</b>
         <br />
         See the chart. Understand the pattern. Ask anything.
       </div>

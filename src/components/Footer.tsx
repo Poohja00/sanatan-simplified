@@ -3,14 +3,6 @@
 import { useState } from "react";
 import Link from "next/link";
 
-function LogoMark() {
-  return (
-    <span className="grid h-8 w-8 place-items-center rounded-full border border-vyoma-gold">
-      <span className="h-[5px] w-[5px] rounded-full bg-vyoma-gold" />
-    </span>
-  );
-}
-
 export default function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
@@ -19,14 +11,14 @@ export default function Footer() {
     <footer className="border-t border-vyoma-line bg-vyoma-bg px-[6vw] pt-16 pb-8 text-vyoma-ink">
       <div className="mx-auto flex max-w-[1180px] flex-col justify-between gap-10 md:flex-row">
         <div>
-          <div className="flex items-center gap-3">
-            <LogoMark />
-            <span className="font-serif text-lg tracking-[0.2em]">VYOMA</span>
+          <div className="inline-flex items-center rounded-md bg-white px-2.5 py-1.5">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/logo.png" alt="Sanatan Simplified" className="h-7 w-auto" />
           </div>
           <p className="mt-3 text-[13px] leading-[1.6] text-vyoma-muted">
-            Understand the pattern.
+            Ancient wisdom.
             <br />
-            Live with clarity.
+            Modern clarity.
           </p>
         </div>
 
@@ -78,7 +70,7 @@ export default function Footer() {
       </div>
 
       <div className="mx-auto mt-12 flex max-w-[1180px] flex-col-reverse items-center justify-between gap-4 border-t border-vyoma-line pt-6 text-[11px] text-vyoma-muted sm:flex-row">
-        <span>© {new Date().getFullYear()} VYOMA. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} Sanatan Simplified. All rights reserved.</span>
         <div className="flex gap-5">
           <Link href="/privacy" className="hover:text-vyoma-gold">Privacy Policy</Link>
           <Link href="/terms" className="hover:text-vyoma-gold">Terms of Service</Link>

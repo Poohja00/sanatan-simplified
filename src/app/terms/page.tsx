@@ -15,7 +15,7 @@ export default function TermsPage() {
         Coming soon.
       </h1>
       <p className="mt-4 text-[15px] leading-[1.7] text-vyoma-muted">
-        Formal terms will be published here before VYOMA takes payments or
+        Formal terms will be published here before Sanatan Simplified takes payments or
         creates accounts. In the meantime: readings on this site (Vedic
         astrology and Lal Kitab alike) are offered for reflection and
         entertainment, and shouldn&rsquo;t replace professional advice for

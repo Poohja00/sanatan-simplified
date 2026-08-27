@@ -79,7 +79,7 @@ export default function MatchSection() {
       </h2>
       <p className="max-w-[60ch] leading-[1.65] text-vyoma-muted">
         The classical 36-point Ashta-Kuta system — but unlike a raw score
-        table, VYOMA tells you which single factor is actually driving the
+        table, Sanatan Simplified tells you which single factor is actually driving the
         result.
       </p>
 

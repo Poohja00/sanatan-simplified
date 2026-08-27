@@ -16,7 +16,7 @@ export default function ContactPage() {
       </h1>
       <p className="mt-4 text-[15px] leading-[1.7] text-vyoma-muted">
         A dedicated contact channel is on the way. Until then, use the
-        newsletter signup in the footer to stay in the loop as VYOMA grows.
+        newsletter signup in the footer to stay in the loop as Sanatan Simplified grows.
       </p>
     </section>
   );

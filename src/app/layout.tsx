@@ -19,8 +19,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "VYOMA — Free Vedic Astrology, Birth Chart & Kundli Matching",
-    template: "%s | VYOMA",
+    default: "Sanatan Simplified — Free Vedic Astrology, Birth Chart & Kundli Matching",
+    template: "%s | Sanatan Simplified",
   },
   description:
     "Generate your free Vedic birth chart (kundli), see today's panchang, ask questions about your chart in plain English, and check kundli matching — rooted in traditional Jyotish and Lal Kitab.",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    siteName: "VYOMA",
-    title: "VYOMA — Free Vedic Astrology, Birth Chart & Kundli Matching",
+    siteName: "Sanatan Simplified",
+    title: "Sanatan Simplified — Free Vedic Astrology, Birth Chart & Kundli Matching",
     description:
       "Generate your free Vedic birth chart, see today's panchang, ask questions about your chart, and check kundli matching.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "VYOMA — Free Vedic Astrology, Birth Chart & Kundli Matching",
+    title: "Sanatan Simplified — Free Vedic Astrology, Birth Chart & Kundli Matching",
     description:
       "Generate your free Vedic birth chart, see today's panchang, ask questions about your chart, and check kundli matching.",
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "VYOMA",
+  name: "Sanatan Simplified",
   url: SITE_URL,
   description:
     "Free Vedic astrology: birth chart generation, daily panchang, chart Q&A, and kundli matching.",
